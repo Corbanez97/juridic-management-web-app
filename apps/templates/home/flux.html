@@ -1,0 +1,187 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+			
+	<div class="content">
+		<div class="panel-header bg-primary-gradient">
+			<div class="page-inner py-5">
+				<div class="d-flex align-items-left align-items-md-center flex-column flex-md-row">
+					<div>
+						<h2 class="text-white pb-2 fw-bold">Fluxos</h2>
+						<h5 class="text-white op-7 mb-2"></h5>
+					</div>
+					<div class="ml-md-auto py-2 py-md-0">
+						<a href="#" class="btn btn-white btn-border btn-round mr-2">Filtros</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="page-inner mt--5">
+			<div class="row mt--2">
+				<div class="col-md-12 ml-auto mr-auto">
+					<div class="card">
+						<div class="card-body">
+							<ul class="timeline">
+								<li>
+									<div class="timeline-badge"><i class="flaticon-message"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+											<p><small class="text-muted"><i class="flaticon-message"></i> 11 hours ago via Twitter</small></p>
+										</div>
+										<div class="timeline-body">
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+									</div>
+								</li>
+								<li class="timeline-inverted">
+									<div class="timeline-badge warning"><i class="flaticon-alarm-1"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-badge danger"><i class="flaticon-error"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+									</div>
+								</li>
+								<li class="timeline-inverted">
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-badge info"><i class="flaticon-price-tag"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+											<hr>
+											<div class="btn-group dropdown">
+												<button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+													<span class="btn-label">
+														<i class="fa fa-cog"></i>
+													</span>
+												</button>
+												<ul class="dropdown-menu" role="menu">
+													<li>
+														<a class="dropdown-item" href="#">Action</a>
+														<a class="dropdown-item" href="#">Another action</a>
+														<div class="dropdown-divider"></div>
+														<a class="dropdown-item" href="#">Something else here</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+									</div>
+								</li>
+								<li class="timeline-inverted">
+									<div class="timeline-badge success"><i class="flaticon-credit-card-1"></i></div>
+									<div class="timeline-panel">
+										<div class="timeline-heading">
+											<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+										</div>
+										<div class="timeline-body">
+											<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}
+
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<!-- <script src="/static/assets/js/setting-demo.js"></script> -->
+	<!-- <script src="/static/assets/js/demo.js"></script> -->
+
+	<script>
+		Circles.create({
+			id:'circles-1',
+			radius:45,
+			value:60,
+			maxValue:100,
+			width:7,
+			text: 5,
+			colors:['#f1f1f1', '#FF9E27'],
+			duration:400,
+			wrpClass:'circles-wrp',
+			textClass:'circles-text',
+			styleWrapper:true,
+			styleText:true
+		})
+
+		Circles.create({
+			id:'circles-2',
+			radius:45,
+			value:70,
+			maxValue:100,
+			width:7,
+			text: 36,
+			colors:['#f1f1f1', '#2BB930'],
+			duration:400,
+			wrpClass:'circles-wrp',
+			textClass:'circles-text',
+			styleWrapper:true,
+			styleText:true
+		})
+
+		Circles.create({
+			id:'circles-3',
+			radius:45,
+			value:40,
+			maxValue:100,
+			width:7,
+			text: 12,
+			colors:['#f1f1f1', '#F25961'],
+			duration:400,
+			wrpClass:'circles-wrp',
+			textClass:'circles-text',
+			styleWrapper:true,
+			styleText:true
+		})
+
+	</script>
+
+{% endblock javascripts %}
